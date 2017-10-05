@@ -15,7 +15,7 @@ public class Giant extends Critter{
    private int turn;
    private String name;
    private int step;
-   private String[] series = {"fee", "fie", "foe", "fum"};
+   static final String[] SERIES = {"fee", "fie", "foe", "fum"};
    
    //Constructs a new instance of the Giant object.
    public Giant(){
