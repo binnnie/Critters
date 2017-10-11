@@ -15,13 +15,13 @@ public class Giant extends Critter{
    private int turn;
    private String name;
    private int step;
-   static final String[] SERIES = {"fee", "fie", "foe", "fum"};
+   public static final String[] SERIES = {"fee", "fie", "foe", "fum"};
    
    //Constructs a new instance of the Giant object.
    public Giant(){
       turn = 6;
       step = 0;
-      name = series[0];
+      name = SERIES[0];
    }
    
    //Returns the color of the Giant instance. In case of the Giant it will always be gray.
@@ -41,7 +41,7 @@ public class Giant extends Critter{
             step = 0;
          else
             step++;
-         name = series[step];
+         name = SERIES[step];
       }
       if(info.getFront() == Neighbor.OTHER)
          return Action.INFECT;

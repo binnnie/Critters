@@ -15,7 +15,7 @@ public class Bear extends Critter{
    private boolean polar;
    private String name;
 //    private boolean alternate;
-//    private String[] names = {"/", "\\"};
+//    public static final String[] NAMES = {"/", "\\"};
    
    //Constructs a new instance of the bear critter. Accepts a boolean isPolar which determines 
    //whether the bear is a polar bear.
@@ -38,10 +38,11 @@ public class Bear extends Critter{
       return name;
    }
    
-   //Accepts a parameter of CritterInfo to provide information of the bear's surroundings. This information is used to determine the bear's next move.
+   //Accepts a parameter of CritterInfo to provide information of the bear's surroundings. This 
+   //information is used to determine the bear's next move.
    public Action getMove(CritterInfo info){
 //       alternate = alternate == false;
-//       name = names[(alternate) ? 1 : 0];
+//       name = NAMES[(alternate) ? 1 : 0];
        if(name.equals("/"))
           name = "\\";
        else
